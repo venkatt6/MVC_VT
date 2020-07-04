@@ -1,0 +1,44 @@
+﻿@model MVC_VT.Models.createUser
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create User</h2>
+
+@using (Html.BeginForm())
+{
+<form. asp-controller="Home" action="Create" method="post">
+    <div>
+        @Html.LabelFor(m => m.userId)
+        @Html.TextBoxFor(m => m.userId)
+    </div>
+    <br />
+
+    <div>
+        @Html.LabelFor(m => m.userName)
+        @Html.TextBoxFor(m => m.userName)
+    </div>
+    <br />
+
+
+    <div>
+        @Html.LabelFor(m => m.userDept)
+        @Html.TextBoxFor(m => m.userDept)
+    </div>
+    <br />
+
+
+    <div>
+        @Html.LabelFor(m => m.userLocation)
+        @Html.TextBoxFor(m => m.userLocation)
+    </div>
+    <br />
+    <div>
+        <input input type="submit" />
+    </div>
+</form.>
+
+
+
+}
